@@ -4,9 +4,10 @@ import 'models/water_entry.dart';
 import 'screens/home_screen.dart';
 import 'screens/steps_tracker_screen.dart';
 import 'screens/water_intake_screen.dart';
+import 'web_phone_frame.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const WebPhoneFrame(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {

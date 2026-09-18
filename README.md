@@ -1,16 +1,31 @@
-# fitness_tracker
+# Fitness Tracker
 
-A new Flutter project.
+Flutter mobile app for tracking daily steps and water intake.
+LnT Mid Project - Mobile Application Development.
 
-## Getting Started
+## Try it
 
-This project is a starting point for a Flutter application.
+- **Android APK:** [Download fitness_tracker.apk](https://github.com/MichLoverz/LnT_Mid-Project-Flutter/releases/latest/download/fitness_tracker.apk)
+  (built automatically from `main`; allow "install from unknown sources" when prompted)
+- **Web demo:** deployed on Vercel - the app is shown inside a phone frame on desktop browsers.
 
-A few resources to get you started if this is your first Flutter project:
+## Run locally
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```sh
+flutter pub get
+flutter run
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Build
+
+```sh
+flutter build apk --release   # build/app/outputs/flutter-apk/app-release.apk
+flutter build web --release   # build/web
+```
+
+## Deployment
+
+- **Vercel:** [vercel.json](vercel.json) installs the Flutter SDK during the install step
+  and runs `flutter build web`; the output directory is `build/web`.
+- **APK:** [release-apk.yml](.github/workflows/release-apk.yml) builds a release APK on
+  every push to `main` and uploads it to the `latest` GitHub Release.

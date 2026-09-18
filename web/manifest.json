@@ -1,11 +1,11 @@
 {
-    "name": "fitness_tracker",
-    "short_name": "fitness_tracker",
+    "name": "Fitness Tracker",
+    "short_name": "Fitness Tracker",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Steps and water intake tracker.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
